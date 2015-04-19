@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Anne Horton - Assignment #5</title>
+    <link rel="stylesheet" type="text/css" href="styles/assignment5.css"/>
+    <script src="js/assignment5.js"></script>
+</head>
+
+<body>
+<section id="title">
+    <h1>Assignment #5 - Anne Horton</h1>
+    <hr>
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please select an option</option>
+        <option>Show Section 1</option>
+        <option>Show Section 2</option>
+        <option>Show Section 3</option>
+    </select>
+</section>
+    <hr>
+
+<section id="section1" class="section1">
+    <h2>Customers</h2>
+    <br>
+    <button onclick="GetAllCustomers()" id="allcustomers">Get All Customers</button>
+    <hr>
+    <br>
+    <label id="allcustomerdisplay">Display all customers here</label>
+</section>
+
+<section id="section2" class="section2">
+    <h2>Customer Order History</h2>
+    <label>Please enter a Customer ID: </label>
+    <input type="text" id="customerid">
+    <br>
+    <button onclick="GetOrderHistory()" id="orderhistory">Get Customer Order History</button>
+    <hr>
+    <br>
+    <label id="orderhistorydisplay">Display order history here</label>
+</section>
+
+<section id="section3" class="section3">
+    <h2>Orders for Customer</h2>
+    <label>Please enter a Customer ID: </label>
+    <input type="text" id="custid">
+    <br>
+    <button onclick="GetOrders()" id="orders">Get Customer Orders</button>
+    <hr>
+    <br>
+    <label id="orderdisplay">Display orders here</label>
+</section>  
+
+<hr>
+<footer>
+<p>Anne Horton</p>
+<p>annemh@uab.edu or amhorton77@gmail.com</p>
+</footer>
+
+</body>
+</html>
